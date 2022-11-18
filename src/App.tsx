@@ -20,6 +20,8 @@ import SvgSequentialLooping from "./svgStudy/examples/SvgSequentialLooping";
 import SvgMovingText from "./svgStudy/examples/SvgMovingText";
 import SvgMovingRotatingText from "./svgStudy/examples/SvgMovingRotatingText";
 import SvgFinalEllipseRotate from "./svgStudy/examples/SvgFinalEllipseRotate";
+import SvgViewBox from "./svgStudy/SvgViewBox";
+import SvgMask from "./svgStudy/SvgMask";
 
 const Container = styled.div`
     width: 100%;
@@ -48,6 +50,19 @@ function App() {
             {/* Example Practice  */}
             {isExampleShown && (
                 <Container>
+                    {/* SvgMask test */}
+                    <InnerContainer>
+                        <h1>SvgMask</h1>
+                        <div style={{ width: 100 }}>
+                            <SvgMask />
+                        </div>
+                    </InnerContainer>
+                    {/* ViewBox test */}
+                    <InnerContainer>
+                        <h1>SvgViewBox</h1>
+                        <SvgViewBox />
+                    </InnerContainer>
+
                     <InnerContainer>
                         <h1>SvgFinalEllipseRotate</h1>
                         <SvgFinalEllipseRotate />

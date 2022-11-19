@@ -22,6 +22,7 @@ import SvgMovingRotatingText from "./svgStudy/examples/SvgMovingRotatingText";
 import SvgFinalEllipseRotate from "./svgStudy/examples/SvgFinalEllipseRotate";
 import SvgViewBox from "./svgStudy/SvgViewBox";
 import SvgMask from "./svgStudy/SvgMask";
+import SvgLiquid from "./svgStudy/SvgLiquid";
 
 const Container = styled.div`
     width: 100%;
@@ -50,6 +51,13 @@ function App() {
             {/* Example Practice  */}
             {isExampleShown && (
                 <Container>
+                    {/* SvgMask test */}
+                    <InnerContainer>
+                        <h1>SvgLiquid</h1>
+                        <div style={{ width: 100 }}>
+                            <SvgLiquid />
+                        </div>
+                    </InnerContainer>
                     {/* SvgMask test */}
                     <InnerContainer>
                         <h1>SvgMask</h1>
